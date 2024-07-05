@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml-model href="bank.dtd" type="application/xml-dtd"?> -->
+<?xml-model href="bank.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<bank>
+    <clients_and_staff>
+      <clients>
+        <individuals>
+          <customer id="w1">
+            <First_name>
+              Иван
+            </First_name>
+            <Middle_name>
+              Иванов
+            </Middle_name>
+            <Last_name>
+              Иванович
+            </Last_name>
+            <account>
+                40817810570000123456
+              </account>
+          </customer>
+          <customer id="w2">
+            <First_name>
+              Пётр
+            </First_name>
+            <Middle_name>
+              Петров
+            </Middle_name>
+            <Last_name>
+              Петрович
+            </Last_name>
+            <account>
+                40817987654456786456
+              </account>
+          </customer>
+          <customer id="w3">
+            <First_name>
+              Алексей
+            </First_name>
+            <Middle_name>
+              Алексеев
+            </Middle_name>
+            <Last_name>
+              Алексеевич
+            </Last_name>
+            <account>
+                42303423034230342303
+              </account>
+          </customer>
+        </individuals>
+        <legal_organizations>
+          <organization id="w4">
+            <Name_of_the_organization>
+              ООО «Телекоммуникации города»
+              ООО «ТелекоммГор»
+            </Name_of_the_organization>
+            <contact_number>
+              +7(495)227-77-36
+            </contact_number>
+            <legal_address>
+              г. Москва, ул. Садовая, д.69, стр. 2
+            </legal_address>
+            <physical_address>
+              г. Москва, ул. Арбатская, д. 8, стр.6
+            </physical_address>
+            <Department_head>
+              <First_name>
+                Георгий
+              </First_name>
+              <Middle_name>
+                Владимиров
+              </Middle_name>
+              <Last_name>
+                Алексеевич
+              </Last_name>
+            </Department_head>
+            <department_employees>
+              <employee>
+                <First_name>
+                  Егор
+                </First_name>
+                <Middle_name>
+                  Дмитриев
+                </Middle_name>
+                <Last_name>
+                  Алексеевич
+                </Last_name>
+              </employee>
+              <employee>
+                <First_name>
+                  Иван
+                </First_name>
+                <Middle_name>
+                  Романов
+                </Middle_name>
+                <Last_name>
+                  Олегович
+                </Last_name>
+              </employee>
+            </department_employees>
+          </organization>
+          <organization id="w5">
+            <Name_of_the_organization>
+              ПАО «Офис Связь»
+              ПАО «ОфСв»
+            </Name_of_the_organization>
+            <contact_number>
+              8495-492-77-25
+            </contact_number>
+            <legal_address>
+              г. Москва, ул. Кропоткинская д. 15, стр.
+            </legal_address>
+            <physical_address>
+              г. Москва, Пропект Вернадского, д.26, к. 2
+              г. Москва, ул. Тимирязевская, д. 64, стр. 7А
+            </physical_address>
+            <Department_head>
+              <First_name>
+                Дмитрий
+              </First_name>
+              <Middle_name>
+                Кириллов
+              </Middle_name>
+              <Last_name>
+                Дмитриевич
+              </Last_name>
+            </Department_head>
+            <department_employees>
+              <employee>
+                <First_name>
+                  Олег
+                </First_name>
+                <Middle_name>
+                  Петров
+                </Middle_name>
+                <Last_name>
+                  Геннадьевич
+                </Last_name>
+              </employee>
+              <employee>
+                <First_name>
+                  Кирилл
+                </First_name>
+                <Middle_name>
+                  Андреев
+                </Middle_name>
+                <Last_name>
+                  Николаевич
+                </Last_name>
+              </employee>
+            </department_employees>
+          </organization>
+        </legal_organizations>
+      </clients>
+      <staff>
+        <employees>
+          <employee>
+            <Job_title>
+              Председатель банка
+            </Job_title>
+            <First_name>
+              Алексей
+            </First_name>
+            <Middle_name>
+              Алексеев
+            </Middle_name>
+            <Last_name>
+              Алексеевич
+            </Last_name>
+          </employee>
+          <employee>
+            <Job_title>
+              Генеральный директор
+            </Job_title>
+            <First_name>
+              Алексей
+            </First_name>
+            <Middle_name>
+              Воронин
+            </Middle_name>
+            <Last_name>
+              Иванович
+            </Last_name>
+          </employee>
+        </employees>
+        <Financial_department>
+          <employees>
+            <employee>
+              <Job_title>
+                Финансовый директор
+              </Job_title>
+              <First_name>
+                Мария
+              </First_name>
+              <Middle_name>
+                Сидорова
+              </Middle_name>
+              <Last_name>
+                Ивановна
+              </Last_name>
+            </employee>
+            <employee>
+              <Job_title>
+                Специалист по расчету заработной платы
+              </Job_title>
+              <First_name>
+                Елена
+              </First_name>
+              <Middle_name>
+                Египова
+              </Middle_name>
+              <Last_name>
+                Александровна
+              </Last_name>
+            </employee>
+            <employee>
+              <Job_title>
+                Финансовый аналитик
+              </Job_title>
+              <First_name>
+                Елизавета
+              </First_name>
+              <Middle_name>
+                Алексеева
+              </Middle_name>
+              <Last_name>
+                Михайловна
+              </Last_name>
+            </employee>
+            <employee>
+              <Job_title>
+                Кадровый администратор
+              </Job_title>
+              <First_name>
+                Никита
+              </First_name>
+              <Middle_name>
+                Артамонов
+              </Middle_name>
+              <Last_name>
+                Платонович
+              </Last_name>
+            </employee>
+          </employees>
+        </Financial_department>
+        <Lending_department>
+          <employees>
+            <employee>
+              <Job_title>
+                Начальник отдела кредитования
+              </Job_title>
+              <First_name>
+                Алексей
+              </First_name>
+              <Middle_name>
+                Козлов
+              </Middle_name>
+              <Last_name>
+                Николаевич
+              </Last_name>
+            </employee>
+            <employee>
+              <Job_title>
+                Заместитель директора отдела кредитования
+              </Job_title>
+              <First_name>
+                Ольга
+              </First_name>
+              <Middle_name>
+                Иванова
+              </Middle_name>
+              <Last_name>
+                Сергеевна
+              </Last_name>
+            </employee>
+            <employee>
+              <Job_title>
+                Менеджер по кредитованию
+              </Job_title>
+              <First_name>
+                Анна
+              </First_name>
+              <Middle_name>
+                Петрова
+              </Middle_name>
+              <Last_name>
+                Ивановна
+              </Last_name>
+            </employee>
+            <employee>
+              <Job_title>
+                Аналитик кредитования
+              </Job_title>
+              <First_name>
+                Алексей
+              </First_name>
+              <Middle_name>
+                Сидоров
+              </Middle_name>
+              <Last_name>
+                Владимирович
+              </Last_name>
+            </employee>
+          </employees>
+        </Lending_department>
+        <Recruitment_department>
+          <employees>
+            <employee>
+              <Job_title>
+                Начальник отдела работы с клиентами
+              </Job_title>
+              <First_name>
+                Елена
+              </First_name>
+              <Middle_name>
+                Смирнова
+              </Middle_name>
+              <Last_name>
+                Васильевна
+              </Last_name>
+            </employee>
+            <employee>
+              <Job_title>
+                HR-менеджер
+              </Job_title>
+              <First_name>
+                Александра
+              </First_name>
+              <Middle_name>
+                Васильева
+              </Middle_name>
+              <Last_name>
+                Артёмовна
+              </Last_name>
+            </employee>
+            <employee>
+              <Job_title>
+                Специалист по подбору персонала
+              </Job_title>
+              <First_name>
+                Григорий
+              </First_name>
+              <Middle_name>
+                Виноградов
+              </Middle_name>
+              <Last_name>
+                Павлович
+              </Last_name>
+            </employee>
+            <employee>
+              <Job_title>
+                Специалист по обучению и развитию
+              </Job_title>
+              <First_name>
+                Вероника
+              </First_name>
+              <Middle_name>
+                Герасимова
+              </Middle_name>
+              <Last_name>
+                Ивановна
+              </Last_name>
+            </employee>
+            <employee>
+              <Job_title>
+                Аналитик по персоналу
+              </Job_title>
+              <First_name>
+                Павел
+              </First_name>
+              <Middle_name>
+                Гусев
+              </Middle_name>
+              <Last_name>
+                Владимирович
+              </Last_name>
+            </employee>
+          </employees>
+        </Recruitment_department>
+        <Marketing_department>
+          <employees>
+            <employee>
+              <Job_title>
+                Директор отдела по маркетингу
+              </Job_title>
+              <First_name>
+                Антон
+              </First_name>
+              <Middle_name>
+                Новиков
+              </Middle_name>
+              <Last_name>
+                Сергеевич
+              </Last_name>
+            </employee>
+            <employee>
+              <Job_title>
+                Менеджер по маркетингу
+              </Job_title>
+              <First_name>
+                Роман
+              </First_name>
+              <Middle_name>
+                Дорофеев
+              </Middle_name>
+              <Last_name>
+                Тимофеевич
+              </Last_name>
+            </employee>
+            <employee>
+              <Job_title>
+                Аналитик маркетинга
+              </Job_title>
+              <First_name>
+                Антон
+              </First_name>
+              <Middle_name>
+                Григорьев
+              </Middle_name>
+              <Last_name>
+                Степанович
+              </Last_name>
+            </employee>
+          </employees>
+        </Marketing_department>
+      </staff>
+    </clients_and_staff>
+
+    <Accounts_and_deposits>
+      <deposits>
+        <organization1 id="id_3">
+            <account>
+                42303654355645642303
+              </account>
+        </organization1>
+        <organization1 id="id_4">
+          <account>
+            42303654355645642303
+          </account>
+        </organization1>
+        <organization1 id="id_5">
+          <account>
+            423058405840584023412
+          </account>
+        </organization1>
+      </deposits>
+    </Accounts_and_deposits>
+
+    <Credit_products>
+      <mortgage>
+        <organization2 id="i_4">
+          <account>
+            42303654355645642303
+          </account>
+          <Initial>
+            15.1%
+          </Initial>
+        </organization2>
+        <organization2 id="i_5">
+          <account>
+            42303654355645642303
+          </account>
+          <Initial>
+            15,1%
+          </Initial>
+        </organization2>
+      </mortgage>
+    </Credit_products>
+
+    <Investment_services>
+      <Funds>
+        <Fund>
+          ОПИФ «Фонд Золота»
+        </Fund>
+        <Fund>
+          ОПИФ «Газпромбанк — Электроэнергетика»
+        </Fund>
+        <Fund>
+          ОПИФ «Перспективные облигации»
+        </Fund>
+      </Funds>
+      <Organization_fund>
+        <organization3 id="r4">
+          <Fund>
+            ОПИФ «Фонд Золота»
+          </Fund>
+          <account>
+            500693740000
+          </account>
+          <account_balance>
+            1400000
+          </account_balance>
+        </organization3>
+      </Organization_fund>
+    </Investment_services>
+
+    <Electronic_services_and_online-banking>
+      <Electronic_signatures>
+        <organization4 id="y4">
+          <Electronic_signature>
+            vladimirovGA
+          </Electronic_signature>
+        </organization4>
+        <customer2 id="u1">
+          <Electronic_signature>
+            ИвановИИ
+          </Electronic_signature>
+        </customer2>
+        <customer2 id="u2">
+          <Electronic_signature>
+            ПетровПП
+          </Electronic_signature>
+        </customer2>
+      </Electronic_signatures>
+      <mobile_applications>
+        <mobile_app>
+          Банк «Процветание»
+        </mobile_app>
+        <mobile_app>
+          «Процветание» мобайл
+        </mobile_app>
+      </mobile_applications>
+      <clients4>
+        <individuals3>
+          <customer3 id="o1">
+            <mobile_app3 id="o101">
+              <login_and_password>
+                <login3>
+                  ivanov1993ii
+                </login3>
+                <password3>
+                  qwerty228
+                </password3>
+              </login_and_password>
+            </mobile_app3>
+          </customer3>
+          <customer3 id="o2">
+            <mobile_app3 id="o01">
+              <login_and_password>
+                <login3>
+                  ivanov1993ii
+                </login3>
+                <password3>
+                  qwerty228
+                </password3>
+              </login_and_password>
+            </mobile_app3>
+          </customer3>
+        </individuals3>
+      </clients4>
+    </Electronic_services_and_online-banking>
+</bank>

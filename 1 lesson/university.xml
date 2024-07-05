@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<university>
+    <group>
+        <number_group>
+            web-22-B1
+        </number_group>
+        <people_count>
+            19
+        </people_count>
+        <curator>
+            <name>
+                Alina Sergeevna
+            </name>
+            <task>
+                Смотерть за группой
+            </task>
+        </curator>
+        <students>
+            <student>
+                <name>
+                    Ivan Ivanovih
+                </name>
+                <marks>
+                    <mark amount="4">
+                        <subject>
+                            Math
+                        </subject>
+                        
+                    </mark>
+                    <mark amount="5">
+                        <subject>
+                            XML
+                        </subject>
+                        
+                    </mark>
+                    <mark amount="5">
+                        <subject>
+                            JAVA DOM
+                        </subject>
+                        
+                    </mark>
+                    <mark amount="4">
+                        <subject>
+                            node.js
+                        </subject>
+                    </mark>
+                </marks>
+                <dolgi>
+                    <subject>
+                        English
+                    </subject>
+                    <subject>
+                        Geometry
+                    </subject>
+                </dolgi>
+            </student>
+            <student_had>
+                <name>
+                    Darya
+                </name>
+                <task>
+                    Смотреть за группой
+                </task>
+            </student_had>
+        </students>
+        
+    </group>
+</university>

@@ -1,0 +1,27 @@
+<!ELEMENT InternetMagazin (Clients, Entitys, Discount, Services, PromoCode)>
+<!ELEMENT Clients (Client+)>
+<!ELEMENT Client (name,age,gender,desired)>
+<!ATTLIST Client id ID #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT desired (#PCDATA)>
+<!ELEMENT Entitys (Entity+)>
+<!ELEMENT Entity (type?,name?,model?,price?,category?,image?)>
+<!ATTLIST Entity id ID #REQUIRED>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ELEMENT image (#PCDATA)>
+<!ELEMENT Discount (Categories, Entitys+)>
+<!ELEMENT Categories (Entitys)>
+<!ELEMENT Services (Service)>
+<!ELEMENT Service (Repair+, Clear)>
+<!ELEMENT Repair (Phone+,TV)>
+<!ELEMENT Phone (model)>
+<!ELEMENT Clear (#PCDATA)>
+<!ELEMENT Phone (#PCDATA)>
+<!ELEMENT TV (#PCDATA)>
+<!ELEMENT PromoCode (promocodes+)>
+<!ELEMENT promocodes (#PCDATA)>

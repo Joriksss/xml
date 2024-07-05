@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="bank">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="clients_and_staff">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="clients">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="individuals">
+                                            <xs:complexType>
+                                                <xs:sequence> 
+                                                    <xs:element name="customer" maxOccurs="unbounded" >
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="First_name" type="xs:string"></xs:element>
+                                                                <xs:element name="Middle_name" type="xs:string"></xs:element>
+                                                                <xs:element name="Last_name" type="xs:string"></xs:element>
+                                                                <xs:element name="account" type="xs:integer"></xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="id" type="xs:ID" use="required"></xs:attribute>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="legal_organizations">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="organization" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="Name_of_the_organization" type="xs:string"></xs:element>
+                                                                <xs:element name="contact_number" type="xs:string"></xs:element>
+                                                                <xs:element name="legal_address" type="xs:string"></xs:element>
+                                                                <xs:element name="physical_address" type="xs:string"></xs:element>
+                                                                <xs:element name="Department_head">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="First_name" type="xs:string"></xs:element>
+                                                                            <xs:element name="Middle_name" type="xs:string"></xs:element>
+                                                                            <xs:element name="Last_name" type="xs:string"></xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="department_employees">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="employee" maxOccurs="unbounded">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element name="First_name" type="xs:string"></xs:element>
+                                                                                        <xs:element name="Middle_name" type="xs:string"></xs:element>
+                                                                                        <xs:element name="Last_name" type="xs:string"></xs:element>
+                                                                                    </xs:sequence>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="id" type="xs:ID" use="required"></xs:attribute>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="staff">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="employees">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="employee" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="Job_title" type="xs:string"></xs:element>
+                                                                <xs:element name="First_name" type="xs:string"></xs:element>
+                                                                <xs:element name="Middle_name" type="xs:string"></xs:element>
+                                                                <xs:element name="Last_name" type="xs:string"></xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Financial_department">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="employees">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="employee" maxOccurs="unbounded">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="Job_title" type="xs:string"></xs:element>
+                                                                            <xs:element name="First_name" type="xs:string"></xs:element>
+                                                                            <xs:element name="Middle_name" type="xs:string"></xs:element>
+                                                                            <xs:element name="Last_name" type="xs:string"></xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Lending_department">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="employees">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="employee" maxOccurs="unbounded">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="Job_title" type="xs:string"></xs:element>
+                                                                            <xs:element name="First_name" type="xs:string"></xs:element>
+                                                                            <xs:element name="Middle_name" type="xs:string"></xs:element>
+                                                                            <xs:element name="Last_name" type="xs:string"></xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>   
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Recruitment_department">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="employees">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="employee" maxOccurs="unbounded">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="Job_title" type="xs:string"></xs:element>
+                                                                            <xs:element name="First_name" type="xs:string"></xs:element>
+                                                                            <xs:element name="Middle_name" type="xs:string"></xs:element>
+                                                                            <xs:element name="Last_name" type="xs:string"></xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Marketing_department">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="employees">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="employee" maxOccurs="unbounded">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="Job_title" type="xs:string"></xs:element>
+                                                                            <xs:element name="First_name" type="xs:string"></xs:element>
+                                                                            <xs:element name="Middle_name" type="xs:string"></xs:element>
+                                                                            <xs:element name="Last_name" type="xs:string"></xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Accounts_and_deposits">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="deposits">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="organization1" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="account" type="xs:string"></xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="id" type="xs:ID" use="required"></xs:attribute>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Credit_products">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="mortgage">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="organization2" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="account" type="xs:string"></xs:element>
+                                                    <xs:element name="Initial" type="xs:string"></xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="id" type="xs:ID" use="required"></xs:attribute>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Investment_services">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Funds">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Fund" type="xs:string"></xs:element>
+                                        <xs:element name="Fund" type="xs:string"></xs:element>
+                                        <xs:element name="Fund" type="xs:string"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Organization_fund">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="organization3">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Fund" type="xs:string"></xs:element>
+                                                    <xs:element name="account" type="xs:integer"></xs:element>
+                                                    <xs:element name="account_balance" type="xs:integer"></xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="id" type="xs:ID" use="required"></xs:attribute>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Electronic_services_and_online-banking">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Electronic_signatures">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="organization4">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Electronic_signature" type="xs:string"></xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="id" type="xs:ID" use="required"></xs:attribute>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="customer2" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Electronic_signature" type="xs:string"></xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="id" type="xs:ID" use="required"></xs:attribute>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="mobile_applications">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="mobile_app" type="xs:string"></xs:element>
+                                        <xs:element name="mobile_app" type="xs:string"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="clients4">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="individuals3">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="customer3" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="mobile_app3">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="login_and_password">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element name="login3" type="xs:string"></xs:element>
+                                                                                        <xs:element name="password3" type="xs:string"></xs:element>
+                                                                                    </xs:sequence>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                        <xs:attribute name="id" type="xs:ID" use="required"></xs:attribute>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="id" type="xs:ID" use="required"></xs:attribute>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,77 @@
+<!ELEMENT bank (clients_and_staff,Accounts_and_deposits,Credit_products,Investment_services,Electronic_services_and_online-banking)>
+<!ELEMENT clients_and_staff (clients,staff)>
+<!ELEMENT clients (individuals,legal_organizations)>
+<!ELEMENT individuals (customer+)>
+<!ELEMENT customer (First_name,Middle_name,Last_name,account)>
+<!ELEMENT First_name (#PCDATA)>
+<!ELEMENT Middle_name (#PCDATA)>
+<!ELEMENT Last_name (#PCDATA)>
+<!ELEMENT account (#PCDATA)>
+<!ATTLIST customer id ID #REQUIRED>
+<!ATTLIST organization1 id ID #REQUIRED>
+<!ATTLIST organization2 id ID #REQUIRED>
+<!ATTLIST mobile_app id ID #REQUIRED>
+<!ATTLIST customer3 id ID #REQUIRED>
+<!ATTLIST mobile_app3 id ID #REQUIRED>
+<!ATTLIST organization id ID #REQUIRED>
+<!ATTLIST organization4 id ID #REQUIRED>
+<!ATTLIST customer2 id ID #REQUIRED>
+<!ATTLIST organization3 id ID #REQUIRED>
+
+<!-- clients -->
+<!ELEMENT legal_organizations (organization+)>
+<!ELEMENT organization (Name_of_the_organization,contact_number,legal_address,physical_address,Department_head,department_employees)>
+<!ELEMENT Name_of_the_organization (#PCDATA)>
+<!ELEMENT contact_number (#PCDATA)>
+<!ELEMENT legal_address (#PCDATA)>
+<!ELEMENT physical_address (#PCDATA)>
+<!ELEMENT Department_head (First_name,Middle_name,Last_name)>
+<!ELEMENT department_employees (employee+)>
+
+<!-- staff -->
+<!ELEMENT staff (employees+,Financial_department,Lending_department,Recruitment_department,Marketing_department)>
+<!ELEMENT employees (employee+)>
+<!ELEMENT employee (Job_title?,First_name+,Middle_name+,Last_name+)>
+<!ELEMENT Job_title (#PCDATA)>
+<!ELEMENT First_name (#PCDATA)>
+<!ELEMENT Middle_name (#PCDATA)>
+<!ELEMENT Last_name (#PCDATA)>
+<!ELEMENT Recruitment_department (employees+)>
+<!ELEMENT Lending_department (employees+)>
+<!ELEMENT Marketing_department (employees+)>
+<!ELEMENT Financial_department (employees+)>
+
+<!--Accounts_and_deposits-->
+<!ELEMENT Accounts_and_deposits (deposits)>
+<!ELEMENT deposits (organization1+)>
+<!ELEMENT organization1 (account+)>
+
+<!--Credit_products -->
+<!ELEMENT Credit_products (mortgage)>
+<!ELEMENT mortgage (organization2+)>
+<!ELEMENT organization2 (account+,Initial+)>
+<!ELEMENT Initial (#PCDATA)>
+
+<!--Investment_services -->
+<!ELEMENT Investment_services (Funds,Organization_fund)>
+<!ELEMENT Funds (Fund+)>
+<!ELEMENT Fund (#PCDATA)>
+<!ELEMENT Organization_fund (organization3)>
+<!ELEMENT organization3 (Fund,account,account_balance)>
+<!ELEMENT account_balance (#PCDATA)>
+
+<!--Electronic_services_and_online-banking -->
+<!ELEMENT Electronic_services_and_online-banking (Electronic_signatures,mobile_applications,clients4)>
+<!ELEMENT Electronic_signatures (organization4,customer2+)>
+<!ELEMENT organization4 (Electronic_signature)>
+<!ELEMENT Electronic_signature (#PCDATA)>
+<!ELEMENT customer2 (Electronic_signature)>
+<!ELEMENT mobile_applications (mobile_app+)>
+<!ELEMENT mobile_app (#PCDATA)>
+<!ELEMENT clients4 (individuals3)>
+<!ELEMENT individuals3 (customer3+)>
+<!ELEMENT customer3 (mobile_app3)>
+<!ELEMENT mobile_app3 (login_and_password+)>
+<!ELEMENT login_and_password (login3+,password3+)>
+<!ELEMENT password3 (#PCDATA)>
+<!ELEMENT login3 (#PCDATA)>

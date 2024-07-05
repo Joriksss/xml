@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-model href="internetmagazin.dtd" type="application/xml-dtd"?>
+
+<InternetMagazin> 
+    <Clients> 
+        <Client id="id_1"> 
+            <name>
+                Петр
+            </name> 
+            <age>
+                25
+            </age> 
+            <gender>
+                male
+            </gender> 
+            <desired>
+                Tehnology
+            </desired>
+        </Client> 
+        <Client id="id_2"> 
+            <name>
+                Алина
+            </name> 
+            <age>
+                25
+            </age> 
+            <gender>
+                female
+            </gender> 
+            <desired>
+                Cloth
+            </desired>
+        </Client> 
+        <Client id="id_3"> 
+            <name>
+                Дмитрий
+            </name> 
+            <age>
+                19
+            </age> 
+            <gender>
+                male
+            </gender>
+            <desired>
+                Tehnology
+            </desired>
+        </Client> 
+        <Client id="id_4"> 
+            <name>
+                Екатерина
+            </name> 
+            <age>
+                30
+            </age> 
+            <gender>
+                female
+            </gender>
+            <desired>
+                Vidiogame
+            </desired>
+        </Client> 
+        <Client id="id_5"> 
+            <name>
+                Сергей
+            </name> 
+            <age>
+                28
+            </age> 
+            <gender>
+                male
+            </gender>
+            <desired>
+                Tehnology
+            </desired>
+        </Client> 
+        <Client id="id_6"> 
+            <name>
+                Марина
+            </name> 
+            <age>
+                22
+            </age> 
+            <gender>
+                female
+            </gender> 
+            <desired>
+                Tehnology
+            </desired>
+        </Client> 
+        <Client id="id_7"> 
+            <name>
+                Александр
+            </name> 
+            <age>
+                45
+            </age> 
+            <gender>
+                male
+            </gender>  
+            <desired>
+                Cloth
+            </desired>
+        </Client> 
+        <Client id="id_8"> 
+            <name>
+                Ольга
+            </name> 
+            <age>
+                26
+            </age> 
+            <gender>
+                female
+            </gender>
+            <desired>
+                Animals
+            </desired>
+        </Client> 
+        <Client id="id_9"> 
+            <name>
+                Андрей
+            </name> 
+            <age>
+                38
+            </age> 
+            <gender>
+                male
+            </gender>
+            <desired>
+                Car
+            </desired>
+        </Client> 
+    </Clients> 
+    <Entitys> 
+        <Entity id="i_1"> 
+            <type>
+                product
+            </type> 
+            <name>
+                Samsung TV
+            </name> 
+            <price>
+                600$
+            </price> 
+            <category>
+                Tehnology
+            </category> 
+            <image>
+                SamsungTV.jpg
+            </image> 
+        </Entity>
+        <Entity id="i_2"> 
+            <type>
+                product
+            </type> 
+            <name>
+                Iphone
+            </name> 
+            <model>
+                Iphone 12 pro max
+            </model>
+            <price>
+                2000$
+            </price> 
+            <category>
+                Tehnology
+            </category> 
+            <image>
+                Iphone12promax.jpg
+            </image> 
+        </Entity>
+        <Entity id="i_3"> 
+            <type>
+                product
+            </type> 
+            <name>
+                Microphone
+            </name> 
+            <price>
+                150$
+            </price> 
+            <category>
+                Tehnology
+            </category> 
+            <image>
+                Microphone.jpg
+            </image> 
+        </Entity>
+    </Entitys>
+    <Discount>
+        <Categories>
+            <Entitys>
+                <Entity id="i_6">
+                </Entity>
+            </Entitys>
+        </Categories>
+        <Entitys>
+            <Entity id="i_4">
+            </Entity>
+        </Entitys>
+    </Discount>
+    <Services>
+        <Service>
+            <Repair>
+                <Phone>
+                    <model>
+                        
+                    </model>
+                </Phone>
+                <TV>
+                </TV>
+            </Repair>
+            <Clear>
+            </Clear>
+        </Service>
+    </Services>
+    <PromoCode>
+        <promocodes>
+            
+        </promocodes>
+    </PromoCode>
+</InternetMagazin>
